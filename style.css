@@ -1,0 +1,118 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    background: #ffffff;
+}
+
+.container {
+    height: 400px;
+    width: 700px;
+    background: #e4e4e4;
+    border-radius: 10px;
+    display: flex;
+    margin: 180px auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* left */
+.calculator {
+    width: 350px;
+    padding: 15px;
+}
+
+/* calculate bill button */
+button {
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #4b12a1;
+    background: linear-gradient(180deg, white 0%);
+    background-origin: border-box;
+    box-shadow:  9px 9px 18px #a9a9a9,
+             -9px -9px 18px #e4e4e4;
+}
+button:hover {
+    background: #4b12a1;
+    color: white;
+    cursor: pointer;
+}
+button:active {
+    box-shadow:  none;
+}
+
+/* bill display, right */
+.result {
+    background: #4b12a180;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    flex-grow: 1;
+    color: white;
+    position: relative;
+}
+.result:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    width: 60px;
+    background: radial-gradient(#ffffff 6px, transparent 7px) repeat-y;
+    background-size: 30px 30px;
+    border-right: 3px dashed white;
+    box-sizing: border-box;
+}
+
+.bill-box, .tip-box, .person-box {
+    margin-left: 20px;
+}
+
+.tip-per-person, .tot-per-person {
+    padding-top: 50px;
+    margin-left: 60px;
+}
+
+input {
+    width: 90%;
+    height: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* remove arrows/spinners from input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#tip_percent, #tot_person {
+    width: 65%;
+    height: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tip-per-person p {
+    font-size: 1rem;
+}
+.tot-per-person p {
+    font-size: 1rem;
+}
+#per_person{
+    font-weight: bold;
+}
+
+/* increase decrease value button*/
+.value-button {
+    display: inline-block;
+    border: 1px solid #2d2d2d;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    vertical-align: middle;
+    background: #ffffff;
+}
+.value-button:hover {
+    cursor: pointer;
+}

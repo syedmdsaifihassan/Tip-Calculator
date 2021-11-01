@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container" data-aos="zoom-in">
+        <!-- calculation part -->
+        <div class="calculator">
+            <div class="bill-box">
+                <p>Bill</p>
+                <input id="bill_amt" type="number" placeholder="000.00">
+            </div>
+
+            <div class="tip-box">
+                <p>Tip%</p>
+                <div class="value-button" id="decrease1" onclick="decreaseValueTip()" value="Decrease Value">-</div>
+                <input id="tip_percent" type="number" value="0">
+                <div class="value-button" id="increase1" onclick="increaseValueTip()" value="Increase Value">+</div>
+            </div>
+
+            <div class="person-box">
+                <p>Number of People</p>
+                <div class="value-button" id="decrease2" onclick="decreaseValuePerson()" value="Decrease Value">-</div>
+                <input id="tot_person" type="number" value="0" oninput="this.value = Math.round(this.value);">
+                <div class="value-button" id="increase2" onclick="increaseValuePerson()" value="Increase Value">+</div>
+            </div>
+            <button type="button" id="calculate">Calculate</button>
+        </div>
+
+        <!-- result display -->
+        <div class="result">
+            <div class="tip-per-person" id="tip_each_block">
+                <span>Tip</span>
+                <p>per Person</p>
+                <span>$</span>
+                <span id="tip_each">0.0</span>
+            </div>
+
+            <div class="tot-per-person">
+                <span>Total</span>
+                <p>per Person</p>
+                <span>$</span>
+                <span id="per_person">0.00</span>
+            </div>
+        </div>
+
+    </div>
+    <!--container end-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
