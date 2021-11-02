@@ -75,6 +75,7 @@ button:active {
     margin-left: 60px;
 }
 
+/* input field */
 input {
     width: 90%;
     height: 20px;
@@ -103,7 +104,7 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
 }
 
-/* increase decrease value button*/
+/* plus minus value buttons*/
 .value-button {
     display: inline-block;
     border: 1px solid #2d2d2d;

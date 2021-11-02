@@ -14,11 +14,13 @@
     <div class="container" data-aos="zoom-in">
         <!-- calculation part -->
         <div class="calculator">
+            <!-- Bill Amount -->
             <div class="bill-box">
                 <p>Bill</p>
                 <input id="bill_amt" type="number" placeholder="000.00" oninput="this.value = Math.abs(this.value)">
             </div>
 
+            <!-- Tip Percent -->
             <div class="tip-box">
                 <p>Tip%</p>
                 <div class="value-button" id="decrease1" onclick="decreaseValueTip()" value="Decrease Value">-</div>
@@ -26,6 +28,7 @@
                 <div class="value-button" id="increase1" onclick="increaseValueTip()" value="Increase Value">+</div>
             </div>
 
+            <!-- Number of Person -->
             <div class="person-box">
                 <p>Number of People</p>
                 <div class="value-button" id="decrease2" onclick="decreaseValuePerson()" value="Decrease Value">-</div>
@@ -37,6 +40,7 @@
 
         <!-- result display -->
         <div class="result">
+            <!-- Tip per Person -->
             <div class="tip-per-person" id="tip_each_block">
                 <span>Tip</span>
                 <p>per Person</p>
@@ -44,6 +48,7 @@
                 <span id="tip_each">0.0</span>
             </div>
 
+            <!-- Total Bill per Person -->
             <div class="tot-per-person">
                 <span>Total</span>
                 <p>per Person</p>

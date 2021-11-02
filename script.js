@@ -1,7 +1,10 @@
 //Calculate Tip
 function calculateTip() {
+    // getting bill amount value
     var billAmt = document.getElementById("bill_amt").value;
+    // getting tip percent value
     var tipPercent = document.getElementById("tip_percent").value;
+    // getting number of person value
     var numOfPeople = document.getElementById("tot_person").value;
 
     //validate input
@@ -58,7 +61,7 @@ function increaseValueTip() {
     document.getElementById('tip_percent').value = value;
 }
 
-// increase decrease total person value
+// increase decrease number of person value
 function decreaseValuePerson() {
     var value = parseInt(document.getElementById('tot_person').value, 10);
     value = isNaN(value) ? 0 : value;
