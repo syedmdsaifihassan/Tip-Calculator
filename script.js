@@ -6,7 +6,7 @@ function calculateTip() {
 
     //validate input
     if (billAmt === "" || billAmt <= 0 || tipPercent < 0 || tipPercent>100) {
-        alert("Please enter valid bill amount, tip percent");
+        alert("Please enter valid bill amount and/or tip percent");
         return;
     }
     //Check to see if number of people is empty or less than or equal to 1

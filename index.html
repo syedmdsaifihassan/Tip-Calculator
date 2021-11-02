@@ -16,13 +16,13 @@
         <div class="calculator">
             <div class="bill-box">
                 <p>Bill</p>
-                <input id="bill_amt" type="number" placeholder="000.00">
+                <input id="bill_amt" type="number" placeholder="000.00" oninput="this.value = Math.abs(this.value)">
             </div>
 
             <div class="tip-box">
                 <p>Tip%</p>
                 <div class="value-button" id="decrease1" onclick="decreaseValueTip()" value="Decrease Value">-</div>
-                <input id="tip_percent" type="number" value="0">
+                <input id="tip_percent" type="number" value="0" min="0" oninput="this.value = Math.abs(this.value)">
                 <div class="value-button" id="increase1" onclick="increaseValueTip()" value="Increase Value">+</div>
             </div>
 
